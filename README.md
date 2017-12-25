@@ -41,7 +41,7 @@ Bu dosya içine aşağıdaki yapıda sınıf oluşturulur<br>
 {</code>
 <code>}</code><br>
 Bu sınıfın içine select, insert, update ve delete gibi sorguların bulunduğu fonksiyonlar ekleyebilirsiniz.<br>
-Oluşturulmuş hazır fonksiyonlar ve örnek kullanışları aşagıda verilmiştir.
+Oluşturulmuş hazır fonksiyonlar ve örnek kullanışları aşagıda verilmiştir.<br>
 <code>return $this->tumVeriyiGetir('SELECT * FROM ornek');</code><br>
 
 <code>return $this->veriGetir('SELECT * FROM ornek WHERE id=?', [$id]);</code><br>
