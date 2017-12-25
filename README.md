@@ -41,12 +41,13 @@ Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm 
 <code> 		$veri['degisken'] = 'Yeni Sayfa';</code><br>
 <code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
 <code> 	}  }</code><br><br>
+<code> return $this->tasarla('yenisayfa', $veri);</code> fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
 İlgili veritabanı dosyasına erişmek için
 <code>$vt = $this->veritabani('SQLite');</code> kodu kullanılır.<br>
 İstenilirse <code>$veri['vt'] = $vt->tumunuGetir();</code> kodu ile $veri dizinine aktarılarak tasarım sayfasına gönderilebilir.<br>
 <h3>Tasarım oluşturma (View)</h3>
 Burada site tasarımını belirleyen html, css, js kodları bulunmalıdır.<br>
-Yukarıdaki <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
+Yukarıdaki tasarla fonksiyonu ile seçilen sayfa olmalıdır. $veri dizisi burada açılarak sabit değişkenlere dönüştürülür.<br><br>
 tasarim/yenisayfa.php<br>
 <code> 	echo $degisken;</code> kodu ile kontrolcüdeki <code>$veri['degisken'] </code> değişkeni ekrana basılmış olur.<br><br>
 Kontrolcü -> <code>$veri['degisken'];</code><br>
