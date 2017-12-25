@@ -39,11 +39,12 @@ Bu dosya içine aşağıdaki yapıda sınıf oluşturulur<br>
 {</code>
 <code>}</code><br>
 Bu sınıfın içine select, insert, update ve delete gibi sorguların bulunduğu fonksiyonlar ekleyebilirsiniz.<br>
-Oluşturulmuş hazır fonksiyonlar ve örnek kullanışları aşagıda verilmiştir.<br>
+Oluşturulmuş hazır fonksiyonlar ve örnek kullanışları aşagıda verilmiştir.<br><br>
 
-<code>return $this->tumVeriyiGetir('SELECT * FROM ornek');</code><br>
+<code>$this->tumVeriyiGetir('SELECT * FROM ornek');</code><br>
 
-<code>return $this->veriGetir('SELECT * FROM ornek WHERE id=?', [$id]);</code><br>
+<code>$this->veriGetir('SELECT * FROM ornek WHERE id=?', [$id]);</code><br>
 
-<code>return $this->sorgu('INSERT INTO ornek (icerik) VALUES (?)', [$icerik]); </code><br>
+<code>$this->sorgu('INSERT INTO ornek (icerik) VALUES (?)', [$icerik]); </code><br><br>
+Ana yapıyı tam olarak kavramak için veritabani/SQLite.php dosyasını inceleyebilirsiniz.
 
