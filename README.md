@@ -30,6 +30,6 @@ Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm 
 Burada site tasarımını belirleyen html, css, js kodları bulunmalıdır.<br>
 Yukarıdaki <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
 tasarim/yenisayfa.php<br>
-<code> 	echo $degisken;</code><br> kodu ile kontrolcüdeki <code>$veri['degisken'] </code> değişkeni ekrana basılmış olur.<br><br>
+<code> 	echo $degisken;</code> kodu ile kontrolcüdeki <code>$veri['degisken'] </code> değişkeni ekrana basılmış olur.<br><br>
 Kontrolcü -> <code>$veri['degisken'];</code><br>
 Tasarim -> <code>$degisken;</code>
