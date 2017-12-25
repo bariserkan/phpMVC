@@ -14,5 +14,5 @@
 	require_once(SISTEM_DIR.'/kontrol.php');
 //Sistemin başlatılması
 	$sistem = new sistem; //Ana sistem 
-	$sistem->baslat();	//Sistem başlat
+	$sistem->baslat(); //Sistem başlat
 ?>
