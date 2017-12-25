@@ -32,4 +32,5 @@ Yukarıdaki <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu
 tasarim/yenisayfa.php<br>
 <code> 	echo $degisken;</code> kodu ile kontrolcüdeki <code>$veri['degisken'] </code> değişkeni ekrana basılmış olur.<br><br>
 Kontrolcü -> <code>$veri['degisken'];</code><br>
-Tasarim -> <code>$degisken;</code>
+Tasarim -> <code>$degisken;</code><br>
+<h3>Veritabani için sorgu oluşturma (Model)</h3>
