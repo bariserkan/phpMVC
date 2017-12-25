@@ -19,8 +19,8 @@ Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"K
 <code> }</code><br><br>
 Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm adı içeren fonksiyon oluşturulur.(../siteurl/sayfaAdi/bolumAdi)<br><br>
 <code> class yenisayfaKontrol extends kontrol{</code></br>
-<code> 	public function indexBolum() //index ana bölümdür</code></br>
-<code> 	{</code><br>
+<code> 	public function indexBolum(){ //index ana bölümdür</code></br>
+<code> </code><br>
 <code> 		$veri['title'] = 'Yeni Sayfa';</code><br>
 <code> 		$veri['degisken'] = 'Yeni Sayfa';</code><br>
 <code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
@@ -42,6 +42,7 @@ Bu dosya içine aşağıdaki yapıda sınıf oluşturulur<br>
 <code>}</code><br>
 Bu sınıfın içine select, insert, update ve delete gibi sorguların bulunduğu fonksiyonlar ekleyebilirsiniz.<br>
 Oluşturulmuş hazır fonksiyonlar ve örnek kullanışları aşagıda verilmiştir.<br>
+
 <code>return $this->tumVeriyiGetir('SELECT * FROM ornek');</code><br>
 
 <code>return $this->veriGetir('SELECT * FROM ornek WHERE id=?', [$id]);</code><br>
