@@ -20,12 +20,10 @@ Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"K
 Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm adı içeren fonksiyon oluşturulur.(../siteurl/sayfaAdi/bolumAdi)<br><br>
 <code> class yenisayfaKontrol extends kontrol{</code></br>
 <code> 	public function indexBolum(){ //index ana bölümdür</code></br>
-<code> </code><br>
 <code> 		$veri['title'] = 'Yeni Sayfa';</code><br>
 <code> 		$veri['degisken'] = 'Yeni Sayfa';</code><br>
 <code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
-<code> 	}</code><br>
-<code> }</code><br>
+<code> 	}  }</code><br>
 <h3>Tasarım oluşturma (View)</h3>
 Burada site tasarımını belirleyen html, css, js kodları bulunmalıdır.<br>
 Yukarıdaki <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
