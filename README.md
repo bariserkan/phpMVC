@@ -11,6 +11,7 @@ Site adı, site url, hata sayfası, bakım sayfası ve hata raporlama gibi özel
 <h3>*ayar/db.php</h3>
 Veri tabanı özelliklerinin belirleneceği dosya <br><br>
 <h2>Kullanış (dizin/site/)</h2>
+<h3>Sayfa ve bölüm oluşturma</h3>
 <b>Yapı: URL: "Site Dizini"/"Sayfa Adı"/"Bölüm Adı"/"Parametreler"</b><br><br>
 Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"Kontrol.php dosyası oluşturulur.(../siteurl/sayfaAdi)<br>
 İçine sayfa adı içeren sınıf yapısı aşağıdaki gibi oluşturulur.<br><br>
@@ -24,5 +25,5 @@ Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm 
 <code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
 <code> 	}</code><br>
 <code> }</code><br><br>
-
+<h3>Tasarım dosyası</h3>
 <code> return $this->tasarla('yenisayfa', $veri);</code>  $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır
