@@ -1,7 +1,7 @@
 <?php
 //Site bilgi ayarları
 //Düzenlenebilir
-	define('SITE_ADI', 'Ornek SITE'); //Site URL	
+	define('SITE_ADI', 'Örnek SITE'); //Site URL	
 	define('URL', 'http://localhost/siteMVC'); //Site URL
 	define('HATA', '0'); // Hata Sayfaları: 1 Aktif - 0 Deaktif
 	define('BAKIM', '0'); // Bakım Sayfası: 1 Aktif - 0 Deaktif

@@ -19,7 +19,7 @@
 	<nav class="container">
 		<ul class="list-inline">
 			<li class="list-inline-item"><a href="<?php echo URL ?>">Ana Sayfa</a></li>
-			<li class="list-inline-item"><a href="deneme">Deneme</a></li>
+			<li class="list-inline-item"><a href="test">Test Sayfası</a></li>
 		</ul>
 	</nav>
 	<hr>

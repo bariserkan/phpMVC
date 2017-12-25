@@ -56,11 +56,58 @@
 				{
 					hata($this->sayfa,"E2");
 				}
-			} 
+			}
+			else if($this->sayfa == ANASAYFA."Kontrol")
+			{
+				$this->baslangic();
+			}
 			else // kontrolcusu yoksa hata
-			{				
+			{			
 				hata($this->sayfa,"E1");
 			}
+		}
+
+		function baslangic()
+		{
+			$TDIR = explode("/",TDIR);
+			$tasarimYol = $TDIR[count($TDIR)-1];
+			echo('<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Hoş Geldiniz</title>
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="'.SURL."/".$tasarimYol.'/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/cover/cover.css">
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container"> 
+          <main role="main" class="inner cover">
+            <h1 class="cover-heading">Hoşgeldiniz!</h1>
+            <p class="lead">Kullanıma başlamadan önce ilk olarak <b><u>ayar/ayar.php</u></b> dosyasını düzenlemelisiniz.
+            <br>
+            İkinci olarak <b><u>site/kontrol/anasayfaKontrol.php</b></u> dosyası oluşturarak anasayfanızı oluşturabilirsiniz.
+			<br>
+			Test sayfasına gitmek için  <a href="./test"> <b>buraya</b></a> tıklayabilirsiniz.<br>
+            Kullanışla ilgili detaylı bilgi almak için github sayfasına bakabilirsiniz.</p>
+            <p class="lead">
+              <a href="https://github.com/bariserkan/phpMVC" target="_blank" class="btn btn-lg btn-secondary"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+            </p>
+          </main>
+          <footer class="mastfoot">
+            <div class="inner">
+              <p>Yazılım: <a href="http://www.bariserkan.com/">Barış Erkan</a></p>
+            </div>
+          </footer>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>');
 		}
 	}
 ?>
