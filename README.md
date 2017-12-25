@@ -9,6 +9,11 @@ Controller -> site/kontrol<br>
 Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"Kontrol.php dosyası oluşturulur.(..siteurl/sayfaAdi)
 İçine sayfa adı içeren sınıf yapısı aşağıdaki gibi oluşturulur.<br>
 <code> class anasayfaKontrol extends kontrol </code></br>
+<code> }</code><br>
+
+
+Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm adı içeren fonksiyon oluşturulur.(..siteurl/sayfaAdi/bolumAdi)
+<code> class anasayfaKontrol extends kontrol </code></br>
 <code> //Anasayfa index bolumu</code><br>
 <code> 	public function indexBolum() //index ana bölümdür</code></br>
 <code> 	{</code><br>
@@ -16,8 +21,5 @@ Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"K
 <code> 		$vt = $this->veritabani('SQLite');	</code><br>
 <code> 		$veri['vt'] = $vt->tumunuGetir();</code><br>
 <code> 		return $this->tasarla('anasayfa', $veri);</code><br>
-<code> 	}
-<code> }
-
-
-Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm adı içeren fonksiyon oluşturulur.(..siteurl/sayfaAdi/bolumAdi)
+<code> 	}</code><br>
+<code> }</code><br>
