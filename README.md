@@ -5,7 +5,12 @@ Model -> site/veritabani<br>
 View -> site/tasarim<br>
 Controller -> site/kontrol<br>
 
-<h3>Kullanış</h3>
+<h2>Düzenlenicek Dosyalar</h2>
+<h3>*ayar/ayar.php</h3>
+Site adı, site url, hata sayfası, bakım sayfası ve hata raporlama gibi özelliklerin belirleneceği dosya<br>
+<h3>*ayar/db.php</h3>
+Veri tabanı özelliklerinin belirleneceği dosya <br><br>
+<h2>Kullanış (dizin/site/)</h2>
 Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"Kontrol.php dosyası oluşturulur.(..siteurl/sayfaAdi)
 İçine sayfa adı içeren sınıf yapısı aşağıdaki gibi oluşturulur.<br><br>
 <code> class yenisayfaKontrol extends kontrol { </code></br>
