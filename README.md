@@ -9,7 +9,7 @@ Controller -> site/kontrol<br>
 <h3>*ayar/ayar.php</h3>
 Site adı, site url, hata sayfası, bakım sayfası ve hata raporlama gibi özelliklerin belirleneceği dosya<br>
 <h3>*ayar/db.php</h3>
-Veri tabanı özelliklerinin belirleneceği dosya <br><br>
+Veri tabanı özelliklerinin belirleneceği dosya <br>
 <h2>Kullanış (dizin/site/)</h2>
 <h3>Sayfa ve bölüm oluşturma (Controller)</h3>
 <b>Yapı: URL/"Site Dizini"/"Sayfa Adı"/"Bölüm Adı"/"Parametreler"</b><br><br>
@@ -25,7 +25,7 @@ Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm 
 <code> 		$veri['degisken'] = 'Yeni Sayfa';</code><br>
 <code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
 <code> 	}</code><br>
-<code> }</code><br><br>
+<code> }</code><br>
 <h3>Tasarım oluşturma (View)</h3>
 Burada site tasarımını belirleyen html, css, js kodları bulunmalıdır.<br>
 Yukarıdaki <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
@@ -34,3 +34,9 @@ tasarim/yenisayfa.php<br>
 Kontrolcü -> <code>$veri['degisken'];</code><br>
 Tasarim -> <code>$degisken;</code><br>
 <h3>Veritabani için sorgu oluşturma (Model)</h3>
+Veritabani klasörü altına istenilen isimde sorgu fonksiyonlarının bulunacağı dosya oluşturulur.<br>
+Örnek: ../site/veritabani/bilgi.php
+Bu dosya içine aşağıdaki yapıda sınıf oluşturulur<br>
+<code>class bilgi extends veritabani
+{</code>
+<code>}</code>
