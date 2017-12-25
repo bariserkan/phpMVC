@@ -31,5 +31,5 @@ Yukarıdaki
 <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
 tasarim/yenisayfa.php<br>
 <code> 	echo $degisken;</code><br> kodu ile kontrolcüdeki <code>$veri['degisken'] </code> değişkeni ekrana basılmış olur.<br>
-Kontrolcü -> <code>$veri['degisken'];</code>
-Tasarim -> <code>$degisken</code>
+Kontrolcü -> <code>$veri['degisken'];</code><br>
+Tasarim -> <code>$degisken;</code>
