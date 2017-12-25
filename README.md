@@ -27,6 +27,7 @@ Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm 
 <code> 	}</code><br>
 <code> }</code><br><br>
 <h3>Tasarım oluşturma (View)</h3>
-<code> return $this->tasarla('yenisayfa', $veri);</code>  $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
+Yukarıdaki 
+<code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
 tasarim/yenisayfa.php<br>
-<code> 	echo $degisken;</code><br>
+<code> 	echo $degisken;</code><br> kodu ile kontrolcüdeki <code>$veri['degisken'] </code> değişkeni ekrana basılmış olur.
