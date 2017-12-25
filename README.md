@@ -1,7 +1,7 @@
 # phpMVC
-PHP ile yazılmış basit mvc yapısı
+PHP ile yazılmış basit MVC yapısı
 
+Controller -> site/kontrol<br>
+View -> site/tasarim<br>
+Model -> site/veritabani<br>
 
-Controller -> site/kontrol
-View -> site/tasarim
-Model -> site/veritabani
