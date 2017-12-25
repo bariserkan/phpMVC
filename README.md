@@ -42,7 +42,8 @@ Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm 
 <code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
 <code> 	}  }</code><br><br>
 İlgili veritabanı dosyasına erişmek için
-<code>$vt = $this->veritabani('SQLite');	</code> kodu kullanılır. İstenilirse 	<code>$veri['vt'] = $vt->tumunuGetir(); </code> kodu ile tasarım sayfasına gönderilebilir.<<br>
+<code>$vt = $this->veritabani('SQLite');</code> kodu kullanılır.<br>
+İstenilirse 	<code>$veri['vt'] = $vt->tumunuGetir();</code> kodu ile tasarım sayfasına gönderilebilir.<br>
 <h3>Tasarım oluşturma (View)</h3>
 Burada site tasarımını belirleyen html, css, js kodları bulunmalıdır.<br>
 Yukarıdaki <code> return $this->tasarla('yenisayfa', $veri);</code>  fonksiyonu ile $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır<br><br>
