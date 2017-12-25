@@ -35,8 +35,16 @@ Kontrolcü -> <code>$veri['degisken'];</code><br>
 Tasarim -> <code>$degisken;</code><br>
 <h3>Veritabani için sorgu oluşturma (Model)</h3>
 Veritabani klasörü altına istenilen isimde sorgu fonksiyonlarının bulunacağı dosya oluşturulur.<br>
-Örnek: ../site/veritabani/bilgi.php
+Örnek: <code>../site/veritabani/bilgi.php</code><br>
 Bu dosya içine aşağıdaki yapıda sınıf oluşturulur<br>
 <code>class bilgi extends veritabani
 {</code>
-<code>}</code>
+<code>}</code><br>
+Bu sınıfın içine select, insert, update ve delete gibi sorguların bulunduğu fonksiyonlar ekleyebilirsiniz.<br>
+Oluşturulmuş hazır fonksiyonlar ve örnek kullanışları aşagıda verilmiştir.
+<code>return $this->tumVeriyiGetir('SELECT * FROM ornek');</code><br>
+
+<code>return $this->veriGetir('SELECT * FROM ornek WHERE id=?', [$id]);</code><br>
+
+<code>return $this->sorgu('INSERT INTO ornek (icerik) VALUES (?)', [$icerik]); </code><br>
+
