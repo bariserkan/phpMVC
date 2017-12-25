@@ -7,8 +7,8 @@ Controller -> site/kontrol<br>
 
 <h3>Kullanılış</h3>
 Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"Kontrol.php dosyası oluşturulur.(..siteurl/sayfaAdi)
-İçine sayfa adı içeren sınıf yapısı aşağıdaki gibi oluşturulur.
-<code> class anasayfaKontrol extends kontrol
+İçine sayfa adı içeren sınıf yapısı aşağıdaki gibi oluşturulur.<br>
+<code> class anasayfaKontrol extends kontrol<br>
 //Anasayfa index bolumu
 	public function indexBolum() //index ana bölümdür
 	{<br>
