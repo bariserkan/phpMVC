@@ -11,16 +11,18 @@ Site adı, site url, hata sayfası, bakım sayfası ve hata raporlama gibi özel
 <h3>*ayar/db.php</h3>
 Veri tabanı özelliklerinin belirleneceği dosya <br><br>
 <h2>Kullanış (dizin/site/)</h2>
-<b>Yapı: URL: "Site Dizini"/"Sayfa Adı"/"Bölüm Adı"/"Parametreler"</b><br>
-Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"Kontrol.php dosyası oluşturulur.(..siteurl/sayfaAdi)<br>
+<b>Yapı: URL: "Site Dizini"/"Sayfa Adı"/"Bölüm Adı"/"Parametreler"</b><br><br>
+Sayfa oluşturmak için(Controller) site/kontrol klasörü altına "Sayfa Adı"Kontrol.php dosyası oluşturulur.(../siteurl/sayfaAdi)<br>
 İçine sayfa adı içeren sınıf yapısı aşağıdaki gibi oluşturulur.<br><br>
 <code> class yenisayfaKontrol extends kontrol { </code></br>
 <code> }</code><br><br>
-Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm adı içeren fonksiyon oluşturulur.(..siteurl/sayfaAdi/bolumAdi)<br><br>
+Bölüm oluşturmak için "Sayfa Adı"Kontrol.php dosyası içine ilgili bolüm adı içeren fonksiyon oluşturulur.(../siteurl/sayfaAdi/bolumAdi)<br><br>
 <code> class yenisayfaKontrol extends kontrol{</code></br>
 <code> 	public function indexBolum() //index ana bölümdür</code></br>
 <code> 	{</code><br>
 <code> 		$veri['title'] = 'Yeni Sayfa';</code><br>
-<code> 		return $this->tasarla('yenisayfa', $veri); //Çağrılacak tasarım dosyası ve tasarım dosyasından çeilecek veriler</code><br>
+<code> 		return $this->tasarla('yenisayfa', $veri); </code><br>
 <code> 	}</code><br>
 <code> }</code><br><br>
+
+<code> return $this->tasarla('yenisayfa', $veri);</code>  $veri dizisi tasarım klasörü altındaki ilgili sayfaya aktarılır ve ilgili sayfa çağrılır
